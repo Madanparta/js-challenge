@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f9f9f9;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    width: 450px;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);;
+}
+
+.container div {
+    margin: 10px 0;
+    padding: 4px 2px;
+}
+
+.container div label{
+    font-size: 18px;
+    display: block;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.container div input[type="range"]{
+    width: 100%;
+    padding: 5px;
+    color: #333;
+}
+
+.container div p {
+    font-size: 12px;
+    color: #333;
+}
+
+.container div:first-child, .container div:nth-child(2){
+    border-bottom: 3px solid #cccccc78;
+    padding-bottom: 15px;
+}
+
+.container div select{
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    outline: none;
+    border-radius: 8px;
+}
+
+.container div select option{
+    font-size: 16px;
+    color: #000;
+}
+
+.container div button{
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid green;
+    background-color: green;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.container div button:hover{
+    background-color: rgb(1, 105, 1);
+    color: #fff;
+}
+
+.container textarea {
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px 5px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    outline: none;
+}

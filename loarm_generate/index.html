@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loarm Generater</title>
+</head>
+<body>
+
+    <div class="container">
+        <div>
+            <label for="paragraphs">Paragraphs</label>
+            <input type="range" id="paragraphs" value="1" min="1" max="10">
+            <p id="paragraphs_value">1</p>
+        </div>
+        <div>
+            <label for="words_of_paragraphs">Words of Paragraphs</label>
+            <input type="range" id="words_of_paragraphs" value="1" min="1" max="100">
+            <p id="words_of_paragraphs_value">1</p>
+        </div>
+        <div>
+            <label for="Tags">Tags</label>
+            <select name="tags" id="Tags"></select>
+        </div>
+        <div>
+            <label for="include_html">Include HTML</label>
+            <select name="include_html" id="include_html">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div>
+            <button id="generate_lorem_ipsum">Generate Lorem Ipsum</button>
+        </div>
+        <div>
+            <div id="lorem_ipsum" style="border:1px solid #ccc; padding:10px; min-height: 150px; overflow-y: auto;"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
